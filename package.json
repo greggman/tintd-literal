@@ -1,0 +1,48 @@
+{
+  "name": "tintd-literal",
+  "displayName": "tintd-literal",
+  "description": "Syntax highlighting for wgsl inside of JavaScript tagged template strings",
+  "version": "0.0.1",
+  "publisher": "gfx-tintd",
+  "repository": {
+    "url": "https://github.com/greggmn/tintd-literal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/greggman/tintd-literal/issues"
+  },
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "shader",
+    "tintd-literal",
+    "webgpu",
+    "javascript",
+    "wgsl",
+    "template"
+  ],
+  "extensionDependencies": [
+    "gfx-tintd.tintd"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx"
+        ],
+        "scopeName": "tintd-literal",
+        "path": "./syntaxes/tintd-literal.json",
+        "embeddedLanguages": {
+          "source.wgsl": "wgsl"
+        }
+      }
+    ]
+  }
+}
